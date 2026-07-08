@@ -11,6 +11,10 @@ theme:
   features:
     - navigation.path
     - toc.integrate
+    - navigation.tracking
+    - navigation.prune
+    - navigation.indexes
+    - content.action.edit
 
 plugins:
   - offline
@@ -24,6 +28,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
 
 extra_css:
   - css/infobox.css
