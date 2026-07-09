@@ -1,3 +1,23 @@
 site_name: Cubyz Wiki
+use_directory_urls: false
+repo_url: https://github.com/iNiKKo/Cubyz-Wiki
+repo_name: iNiKKo/Cubyz-Wiki
+edit_uri: edit/main/docs/
+
 theme:
   name: material
+  logo: images/logo.png
+  favicon: images/logo.png
+  features:
+    - navigation.path
+
+plugins:
+  - offline
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
