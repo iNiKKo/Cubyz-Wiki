@@ -28,7 +28,7 @@ python -m venv .env
 ```
 
 Mind that not every linux distro ships `venv` package alongside interpreter. You have to
-check exact details for your distro.
+check the exact details for your distro.
 
 After creating virtual environment, you have to activate it:
 
