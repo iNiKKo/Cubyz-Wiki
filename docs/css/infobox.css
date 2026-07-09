@@ -1,0 +1,25 @@
+.admonition.infobox {
+    float: right;
+    width: 300px;
+    max-width: 100%;
+}
+.admonition.infobox img {
+    image-rendering: pixelated;
+}
+.admonition.infobox thead {
+    display: none;
+}
+.admonition.infobox table {
+    border: 0 !important;
+    background-color: transparent;
+}
+.admonition.infobox .md-typeset__table {
+    width: 100%;
+}
+.admonition.infobox tr,
+.admonition.infobox td {
+    border: 0 !important;
+    border-top: 0 !important;
+    padding: 2px !important;
+    width: 100%;
+}
