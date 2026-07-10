@@ -4,8 +4,7 @@ icon: material/home
 
 # Cubyz Wiki
 
-![Cubyz 0.3.0 Release Logo](/images/releases/0.3.0.png)
-
+![Cubyz 0.3.0 Release Logo](images/releases/0.3.0.png)
 ## About Cubyz
 
 **Cubyz** is a 3D voxel sandbox game game, featuring innovative mechanics and limitless possibilities.
