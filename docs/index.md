@@ -1,8 +1,5 @@
 ---
 icon: material/home
-tags:
-  - features
-  - download
 ---
 
 # Cubyz Wiki
@@ -46,7 +43,6 @@ tags:
 
 </div>
 
-![Astr0_Steve's World Screenshot](/images/screenshots/screenshot1.png)
 
 <style>
     p:has(.download-button) {

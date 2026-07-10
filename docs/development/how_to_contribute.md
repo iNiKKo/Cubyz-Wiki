@@ -1,3 +1,8 @@
+---
+icon: material/help
+---
+
+
 Cubyz at its core heavily relies on open-source community contributions, so any help you can provide is greatly appreciated.
 
 ---

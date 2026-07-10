@@ -1,12 +1,10 @@
 ---
 icon: material/arrow-down-bold-box-outline
-tags:
-    - install
 ---
 
 # Installation
 
-To play Cubyz, you can either **download a release** or **compile a development version yourself**.
+To play Cubyz, you can either **download a ready-to-run release** or **compile the latest development version yourself**.
 
 ## Requirements
 
@@ -14,38 +12,28 @@ TODO: Add requirements here
 
 ## Downloading a release version
 
-To download a release version, head to the [Cubyz release page on Github](http://github.com/PixelGuys/Cubyz/releases/latest) and download the latest release for your platform.
+To download a release version, head to the [Cubyz release page on GitHub](http://github.com/PixelGuys/Cubyz/releases/latest) and download the latest version for your operating system.
 
-Once you have donwloaded the file for your computer architecture, extract it. You can extract the file **using your file explorer** or using the command below:
+Once downloaded, extract the archive file using your file explorer or your favorite command-line tool.
+
+Inside the extracted folder, make sure you see these **three key files**:
+
+*   `Cubyz` (or `Cubyz.exe`)
+*   `launchConfig.zon`
+*   `assets`
+
+These files must stay in the same folder for the game to run.
+
+To launch Cubyz, run the executable:
 
 === "Linux"
-
-    ```sh
-    tar -xvzf Linux-x86_64.tar.gz
-    ```
-
-=== "Windows"
-
-    ```cmd
-    tar -xvzf Windows-x86_64.zip
-    ```
-
-Once extracted, go into the extracted directory. In this directory you can find **three files**:<br>
-- `Cubyz`<br>
-- `launchConfig.zon`<br>
-- `assets`<br>
-
-These three files are **required** to run Cubyz. 
-
-To run Cubyz, execute the Cubyz binary:
-=== "Linux"
-
     ```sh
     chmod +x Cubyz # make binary executable
     ./Cubyz
     ```
 
 === "Windows"
+    Simply double-click `Cubyz.exe`, or run it via terminal:
 
     **Command Prompt**
     ```cmd
@@ -60,11 +48,11 @@ To run Cubyz, execute the Cubyz binary:
 ## Building from Source
 
 #### The Easy Way (no tools needed)
-**NOTE**: This will run the latest `development` release. Only do this if you know what you are doing!
+**NOTE**: This builds the absolute latest experimental version of the game. It may contain bugs!
 
-1. Download the latest [source code](https://codeload.github.com/PixelGuys/Cubyz/zip/refs/heads/master)
-2. Extract the `.zip` file
-3. Go into the extraced folder and run the executable
+1. Download the latest [source code zip](https://codeload.github.com/PixelGuys/Cubyz/zip/refs/heads/master).
+2. Extract the `.zip` file.
+3. Open the extracted folder and run the launch script for your system:
 
 === "Linux"
     ```sh
@@ -78,25 +66,77 @@ To run Cubyz, execute the Cubyz binary:
 
 Congrats: You just compiled your first program!
 
-#### The Better Way
-**NOTE**: This will run the latest `development` release. Only do this if you know what you are doing!
+#### The Better Way (Using Git)
+**NOTE**: This method makes updating the game incredibly easy without re-downloading files every time.
 
-1. Install [Git](https://git-scm.com)
-2. Clone this repository `git clone https://github.com/pixelguys/Cubyz`
-
-=== "Linux"
-    ```sh
-    ./run_linux.sh
-    ```
+First, select your operating system below to install **Git** and download the code:
 
 === "Windows"
+    Open **PowerShell** or **Command Prompt** as Administrator and run:
     ```cmd
+    winget install --id Git.Git -e --source winget
+    ```
+    
+    Once Git is ready, open a normal terminal and run:
+    ```sh
+    # Download the repository
+    git clone https://github.com/pixelguys/Cubyz
+    
+    # Enter the game folder
+    cd Cubyz
+    
+    # Compile and run
     run_windows.bat
     ```
 
+=== "Arch Linux"
+    ```sh
+    # Install Git
+    sudo pacman -S git
 
-Whenever you want to update your local version you can use `git pull`. This keeps everything in one place, avoiding repeatedly downloading the compiler on every update.
+    # Download the repository
+    git clone https://github.com/pixelguys/Cubyz
+    
+    # Enter the game folder
+    cd Cubyz
 
-## Crashes
+    # Compile and run
+    ./run_linux.sh
+    ```
 
-If Cubyz crashes or doesn't run, you can ask the community for help by joining the [Cubyz Discord Server](/links/discord) or creating an issue on the [Cubyz issue board](https://github.com/pixelguys/cubyz/issues).
+=== "Ubuntu / Debian"
+    ```sh
+    # Install Git
+    sudo apt update && sudo apt install git -y
+
+    # Download the repository
+    git clone https://github.com/pixelguys/Cubyz
+    
+    # Enter the game folder
+    cd Cubyz
+
+    # Compile and run
+    ./run_linux.sh
+    ```
+
+=== "Fedora"
+    ```sh
+    # Install Git
+    sudo dnf install git -y
+
+    # Download the repository
+    git clone https://github.com/pixelguys/Cubyz
+    
+    # Enter the game folder
+    cd Cubyz
+
+    # Compile and run
+    ./run_linux.sh
+    ```
+
+#### How to Update Later
+Whenever you want to pull the latest updates, you don't need to download anything manually again. Just open your terminal inside the `Cubyz` folder and run:
+
+```sh
+git pull
+```

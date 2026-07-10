@@ -1,3 +1,8 @@
+---
+icon: material/toy-brick
+---
+
+
 This page outlines a guide to creating your own addons.
 
 ---
