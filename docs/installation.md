@@ -24,10 +24,8 @@ Cubyz is a very well optimized game, but there is still a limit to what hardware
 
 !!! warning "Please Note"
     Any hardware below these minimum specifications is not officialy recommended, and your gameplay experience may suffer.
-    
-!!! note "Please Note"
+    If your game runs poorly or doesn't start at all, consider reaching out on our [Discord](https://discord.gg/stBh54hF7U).
 
-      If your game runs poorly or doesn't start at all, consider reaching out on our [Discord](https://discord.gg/stBh54hF7U).
 ## Downloading a release version
 
 To download a release version, head to the [Cubyz release page on Github](http://github.com/PixelGuys/Cubyz/releases/latest) and download the latest release for your platform.
