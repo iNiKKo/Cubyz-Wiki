@@ -12,7 +12,7 @@ To play Cubyz, you can either **download a release** or **compile a development 
 
 The minimum system specs required to run Cubyz smoothly.
 
-!!! info "Important GPU Requirement"
+!!! warning "GPU Requirements"
     Cubyz requires a graphics card with **hardware support** for **OpenGL 4.6** along with up-to-date drivers. 
     
     * Not sure if your hardware qualifies? You can search for your specific model on [TechPowerUp](https://www.techpowerup.com/gpu-specs/) or check the official [OpenGL Support Page](https://www.khronos.org/conformance/adopters/conformant-products/opengl).
